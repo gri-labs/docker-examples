@@ -1,7 +1,12 @@
-FROM busybox
+FROM python:3.7-alpine
 
 WORKDIR /app
 
-RUN echo "Hello World" > hello.txt
+COPY app.py /app/app.py
+COPY requirements.txt /app/requirements.txt
 
-CMD ["cat", "hello.txt"]
+RUN pip install -r requirements.txt
+
+RUN apk add --no-cache bash
+
+CMD ["/bin/bash"]
