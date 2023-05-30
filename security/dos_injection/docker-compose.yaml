@@ -31,5 +31,5 @@ services:
 
   ab:
     build:
-      context: ./ab
+      context: ab
       dockerfile: Dockerfile
