@@ -1,11 +1,13 @@
 #!/bin/bash
 
-
 backup() {
     mkdir -p /mnt/wordpress/backups/
-    mysqldump
+    cd /mnt/wordpress/backups/
+    mysqldump -u root -proot -h db --all-databases > backup.sql
 }
 
-case $1 in
+case "$1" in
+backup)
+  backup
   ;;
 esac
