@@ -1,7 +1,5 @@
 FROM ubuntu:latest
 
-# Install 
-
 RUN apt-get update && apt-get install -y \
     mysql-client \
     iputils-ping \
