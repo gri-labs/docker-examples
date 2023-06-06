@@ -6,6 +6,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: wordpress
+      MYSQL_USER: exampleuser
 
   backup:
     build:
