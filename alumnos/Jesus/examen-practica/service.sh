@@ -3,7 +3,7 @@
 DATE_NOW=$(date +"%Y-%m-%d %H:%M:%S")
 
 start() {
-  echo "start service $DATE_NOW"
+  echo "startt service $DATE_NOW"
   awk 'NR==1 {print $1}' /mnt/request.log
 }
 
@@ -17,6 +17,10 @@ start)
   ;;
 help)
   help
+  ;;
+*)
+  echo "Invalid option. Usage: service.sh [start|help]"
+  exit 1
   ;;
 esac
 exit 0
