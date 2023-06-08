@@ -12,6 +12,7 @@ ADD request.log /mnt/request.log
 RUN chmod 755 /mnt/example1.txt
 RUN chmod 600 /mnt/example2.txt
 RUN chmod 777 /mnt/example3-txt
+RUN chmod 755 /etc/int.d/imagen.sh
 
 RUN apk add --no-cache bash
 

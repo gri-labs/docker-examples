@@ -7,8 +7,6 @@ help() {
   echo "Usage: $0 {start|stop}"
 }
 
-RUN chmod 755 /etc/int.d/imagen.sh
-
 case "$1" in
 start)
   start
