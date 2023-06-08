@@ -18,5 +18,9 @@ start)
 help)
   help
   ;;
+*)
+  echo "Invalid option. Usage: service.sh [start|help]"
+  exit 1
+  ;;
 esac
 exit 0
