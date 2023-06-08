@@ -13,8 +13,11 @@ case "$1" in
 start)
 start
 ;;
-*)
+help)
 help
+;;
+*)
+echo "Invalid option"
 exit 1
 ;;
 esac

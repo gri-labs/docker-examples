@@ -1,8 +1,9 @@
 FROM python:3.7-alpine
 
+WORKDIR /mnt/
 
 RUN mkdir -p /mnt/
-WORKDIR /mnt/
+
 
 RUN touch /mnt/example1.txt
 RUN touch /mnt/example2.txt
