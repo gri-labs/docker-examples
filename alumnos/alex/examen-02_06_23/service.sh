@@ -1,20 +1,25 @@
 #!/bin/bash
 
 start() {
-cat /mnt/request.log | awk '{print$1}' | grep 4
-
+  ip=$(cat /mnt/request.log | awk '{print $1}')
+  echo "The IP present in the file is: $ip"
 }
 
 help() {
-  echo "Usage: $0 {start}"
+  echo "Usage: $0 {start|help}"
 }
-
 
 case "$1" in
 start)
-start
-;;
+  start
+  ;;
 help)
-help
-;;
+  help
+  exit 1
+  ;;
+*)
+  help
+  exit 1
+  ;;
 esac
+exit 0
