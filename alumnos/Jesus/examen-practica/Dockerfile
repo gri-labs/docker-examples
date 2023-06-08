@@ -1,5 +1,7 @@
 FROM python:3.7-alpine
 
+LABEL authors="Jesus"
+
 WORKDIR /
 
 RUN touch /mnt/example1.txt
@@ -14,10 +16,3 @@ RUN chmod 755 /mnt/example1.txt && \
     chmod 777 /mnt/example3.txt
 
 CMD ["/bin/bash"]
-
-LABEL authors="Jesus"
-
-
-
-
-
