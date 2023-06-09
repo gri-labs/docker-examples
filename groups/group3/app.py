@@ -14,7 +14,10 @@ def hello_world():
     return 'Hello World!'
 
 
-## Crea una nueva función para el usuario 1
+# Nueva función para el usuario 1
+@app.route('/user1', methods=['GET'])
+def user1_function():
+    return 'This is the user 1 function.'
 
 
 ## Crea una nueva función para el usuario 2
