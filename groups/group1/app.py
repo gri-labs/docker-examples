@@ -15,7 +15,9 @@ def hello_world():
 
 
 ## Crea una nueva función para el usuario 1
-
+@app.route('gdmn', methods=['GET'])
+def Good_morning():
+    return 'Good morning!'
 
 ## Crea una nueva función para el usuario 2
 
