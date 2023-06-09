@@ -14,10 +14,9 @@ def hello_world():
     return 'Hello World!'
 
 
-## Crea una nueva función para el usuario 1
-
-
-## Crea una nueva función para el usuario 2
+@app.route('/user', methods=['GET'])
+def print_user():
+    return 'Renato is the user'
 
 
 # Arranque del servidor o inicio del programa
