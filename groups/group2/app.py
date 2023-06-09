@@ -15,6 +15,8 @@ def hello_world():
 
 
 ## Crea una nueva función para el usuario 1
+def saludo():
+    return 'Hola Python!'
 
 
 ## Crea una nueva función para el usuario 2
