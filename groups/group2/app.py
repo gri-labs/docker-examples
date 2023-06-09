@@ -18,9 +18,6 @@ def hello_world():
 def saludo():
     return 'Hola Python!'
 
-def saludo():
-    return 'Hola Python!'
-
 
 ## Crea una nueva función para el usuario 2
 def multiplica(val1, val2):
