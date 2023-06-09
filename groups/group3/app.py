@@ -10,6 +10,13 @@ app = Flask(__name__)
 def fecha():
     return "Wilson archivo"
 
+# Nueva función para el usuario 1
+@app.route('/user1', methods=['GET'])
+def user1_function():
+    return 'This is the user 1 function.'
+
+## Crea una nueva función para el usuario 2
+
 @app.route('/user', methods=['GET'])
 def print_user():
     return 'Renato is the user'
