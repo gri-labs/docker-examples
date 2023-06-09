@@ -18,8 +18,13 @@ def hello_world():
 def saludo():
     return 'Hola Python!'
 
+def saludo():
+    return 'Hola Python!'
+
 
 ## Crea una nueva función para el usuario 2
+def multiplica(val1, val2):
+    return val1 * val2
 
 
 # Arranque del servidor o inicio del programa
