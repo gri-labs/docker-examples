@@ -9,8 +9,8 @@ app = Flask(__name__)
 # Define una función llamada hell_world
 # Nos ayuda a encapsular el código, mantener funcionalidades...
 def fecha():
-    DATE_NOW=$(date +"%Y-%m-%d %H:%M:%S")
-    return print($DATENOW)
+    DATE_NOW="Wilson archivo"
+    return print(DATE_NOW)
 
 ## Crea una nueva función para el usuario 1
 
