@@ -1,18 +1,16 @@
 # Importa la clase flask del modulo flask
 from flask import Flask
-# Importa el modulo logging
-import logging
 
 # Se crea una instancia de la clase flask llamada app y esta variable app se utiliza para configurar el resto del programa
 app = Flask(__name__)
 
 
-@app.route('/', methods=['GET'])
+@app.route('/fecha', methods=['GET'])
 # Define una función llamada hell_world
 # Nos ayuda a encapsular el código, mantener funcionalidades...
-def hello_world():
-    return 'Hello World!'
-
+def fecha():
+    DATE_NOW=$(date +"%Y-%m-%d %H:%M:%S")
+    return print($DATENOW)
 
 ## Crea una nueva función para el usuario 1
 
