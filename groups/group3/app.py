@@ -12,7 +12,6 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World!'
 
-<<<<<<< HEAD
 # Nueva función para el usuario 1
 @app.route('/user1', methods=['GET'])
 def user1_function():
