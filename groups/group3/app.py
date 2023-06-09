@@ -4,18 +4,15 @@ from flask import Flask
 # Se crea una instancia de la clase flask llamada app y esta variable app se utiliza para configurar el resto del programa
 app = Flask(__name__)
 
-
 @app.route('/fecha', methods=['GET'])
 # Define una función llamada hell_world
 # Nos ayuda a encapsular el código, mantener funcionalidades...
 def fecha():
-    DATE_NOW="Wilson archivo"
-    return print(DATE_NOW)
+    return "Wilson archivo"
 
-## Crea una nueva función para el usuario 1
-
-
-## Crea una nueva función para el usuario 2
+@app.route('/user', methods=['GET'])
+def print_user():
+    return 'Renato is the user'
 
 
 # Arranque del servidor o inicio del programa
