@@ -18,7 +18,6 @@ def hello_world():
 def print_user():
     return 'Renato is the user'
 
-
 # Arranque del servidor o inicio del programa
 if __name__ == '__main__':
     # Se configura el log
