@@ -13,11 +13,8 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World!'
 
-
-## Crea una nueva función para el usuario 1
 def saludo():
     return 'Hola Python!'
-
 
 ## Crea una nueva función para el usuario 2
 
