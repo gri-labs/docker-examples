@@ -6,19 +6,15 @@ import logging
 # Se crea una instancia de la clase flask llamada app y esta variable app se utiliza para configurar el resto del programa
 app = Flask(__name__)
 
-
 @app.route('/', methods=['GET'])
 # Define una función llamada hell_world
 # Nos ayuda a encapsular el código, mantener funcionalidades...
 def hello_world():
     return 'Hello World!'
 
-
-#conflicts here
-
-
-## Crea una nueva función para el usuario 2
-
+@app.route('/user', methods=['GET'])
+def print_user():
+    return 'Renato is the user'
 
 # Arranque del servidor o inicio del programa
 if __name__ == '__main__':
