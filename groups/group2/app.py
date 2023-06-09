@@ -12,6 +12,10 @@ def suma():
     result = 1 + 1
     return print(result)
 
+@app.route('gdmn', methods=['GET'])
+def good_morning():
+        return print"Good morning!"
+
 
 
 
