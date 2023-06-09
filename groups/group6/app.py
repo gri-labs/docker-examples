@@ -14,11 +14,10 @@ def hello_world():
     return 'Hello World!'
 
 
-## Crea una nueva función para el usuario
+## Crea una nueva función para el usuario 1
 
-## Crea una nueva función para el usuario 2222222
 
-## Crea una nueva función para el usuario 3
+## Crea una nueva función para el usuario 2
 
 
 # Arranque del servidor o inicio del programa

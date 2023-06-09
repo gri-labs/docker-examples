@@ -20,9 +20,6 @@ def hello_world():
 ## Crea una nueva función para el usuario 2
 
 
-## Crea una nueva función para el usuario 3
-
-
 # Arranque del servidor o inicio del programa
 if __name__ == '__main__':
     # Se configura el log
