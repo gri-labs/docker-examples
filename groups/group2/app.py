@@ -7,7 +7,10 @@ import logging
 app = Flask(__name__)
 
 
-@app.route('/', methods=['GET'])
+@app.route('/suma', methods=['GET'])
+def suma():
+    result = 1 + 1
+    return print(result)
 # Define una función llamada hell_world
 # Nos ayuda a encapsular el código, mantener funcionalidades...
 def hello_world():
